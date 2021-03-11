@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Livros</h1> 
+    {% for livros in all_livros %}
+      <div class="livros-entry">
+        <h2><a href="{{ livros.get_absolute_url}}">{{ livros.nome }}</a></h2>
+      </div>
+      <div class="nav-right">
+        <a href="{% url 'novo_livro' %}"> + Adicionar Novo Livro</a>
+      </div>
+    {% endfor %}
+{% endblock content %}

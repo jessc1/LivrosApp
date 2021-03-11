@@ -1,0 +1,11 @@
+{% block content %}
+  <div class="livros-entry">
+    <h2>Nome: {{ livros.nome }}</h2>
+    <p>Autor: {{ livros.autor }}</p>
+    <p>Preço: {{ livros.preco }}</p>
+    <p>Páginas: {{ livros.qtd_paginas }}</p>
+    <p>Data: {{ livros.data_inclusao }}</p>    
+  </div>
+  <a href="{% url 'editar_livro' livros.pk %}">+ Editar Livro</a>
+  <p><a href="{% url 'deletar_livro' livros.pk %}">+ Deletar Livro</a></p>
+{% endblock content %}

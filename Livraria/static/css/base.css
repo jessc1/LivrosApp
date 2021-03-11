@@ -1,0 +1,31 @@
+.nav-left {
+    margin-right: auto;
+  }
+  
+  .nav-right {
+    display: flex;
+    padding-top: 2rem;
+  }
+  
+  .livros-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .livros-entry h2 {
+    margin: 0.5rem 0;
+  }
+  
+  .livros-entry h2 a,
+  .livros-entry h2 a:visited {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  .livros-entry p {
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  .livros-entry h2 a:hover {
+    color: red;
+  }
